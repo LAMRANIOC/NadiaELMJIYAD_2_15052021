@@ -1,0 +1,649 @@
+/* Fichier CSS pour mon projet 2 création du site RESERVIA */
+/*#0065FC, et sa version plus claire #DEEBFF */
+/*Police Raleway pour site Reservia */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* { 
+	font-family: "Raleway", Sans-serif;
+}
+
+body{
+  font-size: 15px;
+  margin: 0px;
+  color: black;
+  margin: 0 auto;
+  
+  /* padding: 0 20px; */
+}
+
+main {
+  max-width: 1200px;
+  margin : 0 auto;
+}
+/* =====  DEB  ===================    Affichage Logo et Menu de navigation    ===============================*/
+.containheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+}
+.logo {
+	height: 10px;
+}
+.navigation{
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header ul{
+	display: flex;
+	list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: #0065fc;
+}
+header ul li:hover {
+  border-top : 3px solid #0065FC;
+  color: #0065fc;
+}
+header ul li {
+  padding: 0px 28px;
+  display: flex;
+  align-items: center;
+  border : 3px solid transparent;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black; 
+}
+.sinscrire{
+	margin-left: 30px;
+    font-weight: bold;
+    color:#0065FC;
+    border-top: 0px solid transparent;
+}
+/* =====  FIN  ===================    Affichage Logo et Menu de navigation    ===============================*/
+/* =====  Debut  =================    Formulaire de recherche                 ===============================*/ 
+
+/* definition de la section recherche */
+
+.Recherche{
+    display: flex;
+    border: 2px solid #d9d9d9; 
+    border-radius: 15px;
+    width: max-content;
+    font-size: 20px;
+    height: 46px;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+ 
+.btn_Recherche { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 50px; 
+  margin-left: -4px;
+  background-color: #d9d9d9;
+  border-radius: 15px 0px 0px 15px   ;  
+} 
+.btn_Recherche i {
+  color: black;
+ }
+.input_recherche { 
+    border:none;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 4px;
+    outline-style: none; /* pour enlever la bordure de saisie */
+}
+.Recherche button  {
+    border: none ;
+    font-weight: 700;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: -4px;
+ }
+ .loupe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 50px; 
+    background-color: #0065FC;
+    border-radius: 15px  ; 
+    display: none; 
+    margin-right: -2px
+ }
+ .loupe i {
+    color:white;
+}
+/* =====  FIN   =================    Formulaire de recherche       ================================*/
+/* =====  DEB  ===================    Mise en forme des filtres    ===============================*/
+.filtres {
+    display: flex ;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.titrefiltres {
+  display: flex ;
+}
+
+.IconFiltre {
+  display: flex;
+	height: 46px;
+	border-radius: 25px;
+	text-align:center;	
+  align-items: center;
+	border: 2px solid #d9d9d9;
+  margin: 5px 0px 5px 20px;
+}
+
+.imagefiltre {
+	 display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; 
+    width: 50px; 
+    background-color: #DEEBFF;
+    border-radius: 50%; 
+    margin-top: 0px;
+    margin-left: -2px;
+    cursor:pointer;
+}
+.libfiltre {
+  font-size: 18px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.IconFiltre:hover {
+  background-color: #DEEBFF;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.fas {
+  color: #0065fc;
+}
+/* =====  FIN  ===================    Mise en forme des filtres    ===============================*/
+
+/* la ligne information */
+
+.infos {
+    display:flex;
+    align-items: center;
+}
+
+.icone_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid #d9d9d9;
+    margin-right: 10px;
+}
+/* =====  Debut  ===================    PARAMETRAGE  Tout les HEBERGEMENTS    ===============================*/
+.main {
+  display: flex;
+}
+.TousHebergements {
+  display: flex;
+  margin: 25px 0 50px;
+}
+
+#Hebergements {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 62%;
+  padding: 20px;
+  /*margin: 0 25px 0 0;*/
+}
+.hebergementmarseille {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotel a{
+  display: flex;
+  flex-direction: column;
+}
+.hotel {
+  display:flex;
+  width: 30%;
+  background: white;
+  border-radius: 20px;
+  border : 5px solid white;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 5px 20px 5px;
+  box-shadow: 0 5px 16px #0000002e;
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome*/
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9*/ 
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+.hotel .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.hotel:hover {
+  -webkit-transform: scale(1.05); /* Safari et Chrome */
+  -moz-transform: scale(1.05); /* Firefox */
+  -ms-transform: scale(1.05); /* Internet Explorer 9 */
+  -o-transform: scale(1.05); /* Opera */
+  transform: scale(1.05);
+}
+.hotel img {
+  background-color: white;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.hotel p {
+  margin: 5px 10px;
+  font-weight: 100;
+}
+.hotel h3 {
+  margin: 3px 10px;
+}
+.etoilesp {
+  margin: 10px 10px 10px 10px;
+}
+.etoiles {
+  margin: 3px 0px;
+}
+
+.afficherplus {
+  color: black;
+  padding-left: 8px;
+}
+
+/* PARAMETRES HEBERGEMENTS POPULAIRES */
+
+#pluspopulaires{
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 32%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.hebergementspop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.hotelpop {
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  border : 5px solid white;
+  overflow: hidden;
+  justify-content: space-around;
+  box-sizing: border-box;
+   margin: 0px 0px 20px 0px; 
+  height: 145px;
+  box-shadow: 0 5px 16px #0000002e;
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.hotelpop a{
+  display: flex;
+}
+.hotelpop .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hotelpop:hover {
+  /* L'image est zoomé au survol */
+
+  -webkit-transform: scale(1.15); /* Safari et Chrome */
+  -moz-transform: scale(1.15); /* Firefox */
+  -ms-transform: scale(1.15); /* Internet Explorer 9 */
+  -o-transform: scale(1.15); /* Opera */
+  transform: scale(1.15);
+}
+.popimage {
+  background-color: white;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  float: left;
+  width: 45%;
+  height: 100%;
+  margin-right: 5px;  
+  object-fit: cover;
+}
+.grey {
+  color: lightgrey;
+}
+.hotelpop h3 {
+  margin: 0px 0px 5px 0px;
+}
+.hotelpop p {
+  margin: 0px;
+  font-weight: 100;
+}
+.titresection {
+  color: black;
+  font-size: 1.3em;
+  padding-left: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.titresection i {
+  color: black;
+}
+  /*******************************************************/
+
+/* PARAMETRES DE LA SECTION ACTIVITE */
+
+#Activites {
+  width: 100%;
+  height: 100%;
+}
+
+.containerActivites {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 496px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.blocActivite {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Activite {
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+  position: relative;
+  overflow: hidden;
+}
+
+.Activite a {
+  display: flex;
+  height: 100%;
+}
+
+.Activite:hover {
+  /* L'image est zoomé au survol */
+
+  -webkit-transform: scale(1.05); /* Safari et Chrome*/
+  -moz-transform: scale(1.05); /* Firefox */
+  -ms-transform: scale(1.05); /* Internet Explorer 9 */
+  -o-transform: scale(1.05); /* Opera */
+  transform: scale(1.05);
+  cursor: pointer;
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde . */
+  -webkit-transition: all 1s ease; 
+  -moz-transition: all 1s ease; 
+  -ms-transition: all 1s ease; 
+  -o-transition: all 1s ease; 
+  transition: all 1s ease; 
+}
+
+.Activite img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem 1.25rem 0 0;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+.nomactivite {
+  position: absolute;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+  padding: 0 0px 5px 20px;
+}
+
+.blocActivite .Activite2 {
+  margin-bottom: 20px;
+}
+/* fin style Activité
+
+/* =====  DEB  ===================    Mise en forme pied de page => Footer    ===============================*/
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.Footer {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.ColonneFooter {
+  width: 40%;
+}
+
+.Titrefooter {
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.ligneFooter {
+  color: black;
+  display: block;
+  margin: 15px 0;
+  font-weight: 500;
+}
+/* =====  FIN  ===================    Mise en forme pied de page => Footer    ===============================*/
+
+/***************                   Responsive pour Smartphone           *************/
+@media(max-width: 767px)
+{ 
+  * { 
+  width:auto;
+    }
+  body
+  {
+             width :auto% ;
+             padding: 0px;
+  }
+.navigation .sinscrire{
+margin-top: 0;
+margin-left :10px;
+}
+
+.titrefiltres{
+  width: 100%
+}
+.IconeFiltre {
+    margin: 5px 10px 5px 0px    ;
+    }
+
+.filtres{
+  align-items: flex-start;
+ /* margin: auto*/
+}
+.navigation{
+  flex-direction: column-reverse;
+}
+/*******************************************************/
+/* Partie RECHERCHE  mettre la Loupe à la palce de Recherche*/
+    .Recherche button {
+        display: none;}   
+
+    .Recherche .loupe {
+        display:contents;
+        display: flex;
+    }
+
+    .input_recherche {
+        width: 100%
+    }
+
+    .RechercheHergement {
+        margin: 20px;
+    }
+    .Recherche {
+        width: 100%;
+        margin: 20px    auto;
+    }
+/*******************************************************/
+
+.TousHebergements {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: center;
+  /*margin: auto;*/
+}
+#TousHebergements #Hebergements 
+{
+  order: 2;
+}
+
+#pluspopulaires
+{
+  width: auto;
+  /*width: 62%;
+  margin-left :5px;*/
+  order: 1;
+  border-radius: 0px;
+}
+#Hebergements
+{
+  background-color: white;
+  width: auto;
+}
+/* rendre le hover en bas au lieu de en haut */
+header ul li:hover {
+  border-bottom : 3px solid #0065fc;
+  border-top : 3px solid transparent;
+  color: #0065fc;
+}
+header ul li {
+  height:auto;
+  padding: 0px 28px;
+  display: flex;
+  align-items: center;
+  border : 3px solid transparent;
+  box-sizing: border-box;
+}
+    .hotel{
+      width:auto;
+    }  
+    
+    .hebergementmarseille {
+        width: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        order:2;
+    }
+
+  .containerActivites{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center
+  }
+/* PARAMETRES ACTIVITES 
+
+  .containerActivites {
+    display: grid;
+    height: auto;
+justify-content: center;
+}*/
+/*    margin-bottom: 25px;
+    justify-content: normal;
+    -moz-margin-start: -60px;
+  }
+*/
+  .blocActivite {
+    width: auto;
+
+  }
+
+  #Activites img {
+    max-width: 100%; 
+    /*width: 100%;
+    height: 100%;*/
+    justify-content: space-around;
+    margin-left:  -15px;
+    margin-top: -5px;
+    padding: 0px 0px 0px 20px;
+  }
+
+  .Activite {
+    margin-bottom: 20px;
+    height: 200px;
+  box-shadow: 0 3px 10px #0000002e;
+  }
+
+  .nomactivite {
+    margin: none;
+    bottom: -5px;
+   /* padding: 8px 0px 5px 20px;
+    border-radius: 0 0 1.25rem 1.25rem;
+    border-color: transparent;
+    box-shadow: 0 5px 16px #0000002e;
+  /*  margin-top: -12px;*/
+  }
+
+  .Footer{
+    flex-direction: column;
+    padding-left: 10px;
+  }
+}
+
+/***************                   Responsive pour Tablette        ***************/
+@media(min-width: 768px) and (max-width: 1388px)
+{
+  body
+  {
+              width :100% ;
+              padding :0px ;
+  }
+}
