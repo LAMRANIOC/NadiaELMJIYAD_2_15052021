@@ -32,18 +32,17 @@ main {
   margin: 0 auto;
   height: 50px;
 }
-
-
 #logo {
+	/* height: 10px; */
   flex-grow: 1;
 }
 .navigation{
     
     display: flex;
     align-items: center;
-    height: 100%;
     width: 100%;
-  }
+    height: 100%;
+}
 header ul{
 	display: flex;
 	list-style: none;
@@ -52,9 +51,8 @@ header ul{
   height: 100%;
   color: #0065fc;
 }
-header ul li:hover a {
-  /*border-top : 3px solid #0065FC;
-  border-top : 3px solid #0065FC;*/
+header ul li:hover {
+  border-top : 3px solid #0065FC;
   color: #0065fc;
 }
 header ul li {
@@ -73,9 +71,6 @@ a{
     font-weight: bold;
     color:#0065FC;
     border-top: 0px solid transparent;
-}
-.sinscrire a{
-	    color:#0065FC;
 }
 /* =====  FIN  ===================    Affichage Logo et Menu de navigation    ===============================*/
 /* =====  Debut  =================    Formulaire de recherche                 ===============================*/ 
@@ -512,7 +507,6 @@ footer {
     width: 100%;
     top: 0;
     background-color: white;
-    z-index: 1;
 }
 .containheader{
   padding: 0;
@@ -525,13 +519,9 @@ justify-content: space-around;
 header ul{
   font-size: large;
   display: flex;
-  background-color: white;
 }
-
-/************************/
 .sinscrire {
-					 
-  margin-left: 0;			  
+  margin-left: 0;
   font-size: large;
   display: flex;
   justify-content: flex-end;
@@ -547,8 +537,10 @@ div#logo {
 }
 .navigation{ 
   flex-wrap: wrap;
+  
   width: 100%;
   margin: 0;
+ 
 }
 
 .navigation > div {
@@ -563,20 +555,26 @@ div#logo {
   width: 50%;
 }
 
+/*.sinscrire{
+margin-top: 0;
+margin-left :10px;
+}*/
+/*
+.sinscrire {
+            position: absolute;
+            bottom: 50%;
+            right: -15%;
+        }*/
 .titrefiltres{
   width: 100%
 }
 .IconeFiltre {
-    margin: 5px 5px 8px 0px    ;
+    margin: 5px 10px 5px 0px    ;
     }
 
 .filtres{
   align-items: flex-start;
-  margin: 20px;
-}
-p.infos
-{
-margin: 20px;
+ /* margin: auto*/
 }
 /*******************************************************/
 /* Partie RECHERCHE  mettre la Loupe à la palce de Recherche*/
@@ -630,7 +628,7 @@ header ul li:hover {
 }
 header ul li {
   height:auto;
-  /*padding: 0px 28px;*/
+  
   display: flex;
   align-items: center;
   border : 3px solid transparent;
@@ -652,13 +650,12 @@ header ul li {
     display: flex;
     flex-direction: column;
     height: auto;
-    justify-content: center;
-    margin-bottom: 0;
+    justify-content: center
   }
   #Activites
   {
     margin :15px;
-    /*padding: 15px;*/
+    padding: 15px;
   }
   .blocActivite {
     width: auto;
@@ -698,7 +695,7 @@ header ul li {
   {
     background-color: #f2f2f2;
               width :100% ;
-            /*  padding :3px ;*/
+              
   }
   #Hebergements, #pluspopulaires {
     background-color:white;
