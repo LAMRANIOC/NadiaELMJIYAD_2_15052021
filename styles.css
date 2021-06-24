@@ -1,6 +1,6 @@
 /* Fichier CSS pour mon projet 2 création du site RESERVIA */
 /*#0065FC, et sa version plus claire #DEEBFF */
-/*Police Raleway pour site Reservia */
+/*Police Raleway pour site Reservia   */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
@@ -395,7 +395,7 @@ a{
   -o-transition: all 1s ease; 
   transition: all 1s ease;
   }
-  
+
 .Box_Activite2 a,.Box_Activite3 a,.Box_Activite5 a,.Box_Activite6 a,.Box_Activite1 a,.Box_Activite4 a
 {
   display: flex;
