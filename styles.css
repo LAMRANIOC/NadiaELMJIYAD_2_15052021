@@ -155,7 +155,7 @@ a{
 	text-align:center;	
   align-items: center;
 	border: 2px solid #d9d9d9;
-  margin: 5px 0px 5px 20px;
+  margin: 5px 0px 5px 5px;
 }
 .imagefiltre {
 	 display: flex;
@@ -213,15 +213,16 @@ a{
   border-radius: 15px;
   width: 62%;
   padding: 20px;
-  /*margin: 0 25px 0 0;*/
 }
 .hebergementmarseille {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .hotel a{
   display: flex;
   flex-direction: column;
+  width:100%;
 }
 .hotel {
   display:flex;
@@ -233,7 +234,7 @@ a{
   box-sizing: border-box;
   margin: 0 5px 20px 5px;
   box-shadow: 0 5px 16px #0000002e;
-  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  /*transition largeur,hauteur, durée d'une seconde*/
   -webkit-transition: all 1s ease; /* Safari et Chrome*/
   -moz-transition: all 1s ease; /* Firefox */
   -ms-transition: all 1s ease; /* Internet Explorer 9*/ 
@@ -310,9 +311,9 @@ a{
   justify-content: space-around;
   box-sizing: border-box;
   margin: 0px 0px 20px 0px; 
-  height: 145px;
+  height: 160px;/*145*/
   box-shadow: 0 5px 16px #0000002e;
-  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  /*transition largeur,hauteur, durée d'une seconde*/
   -webkit-transition: all 1s ease; /* Safari et Chrome */
   -moz-transition: all 1s ease; /* Firefox */
   -ms-transition: all 1s ease; /* Internet Explorer 9 */
@@ -374,6 +375,7 @@ a{
   grid-gap: 10px;
    width: 100%;
   height: 100%;
+  padding-bottom: 20px;
 }
 .activityname
 {
@@ -387,8 +389,7 @@ a{
   box-shadow: 0 3px 10px #0000002e;
   border-radius: 15px;
   overflow: hidden;
-  margin-block-end: 20px;
-  /*La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde*/
+  /*transition largeur,hauteur, durée d'une seconde*/
   -webkit-transition: all 1s ease; 
   -moz-transition: all 1s ease; 
   -ms-transition: all 1s ease; 
@@ -410,7 +411,7 @@ a{
   grid-template-columns: repeat(2, 1fr);
   grid-column-end: auto;
   grid-gap: 20px;
-  height: 80%;
+  height: 600px;
 }
 .Activite123 div:nth-child(1),.Activite456 div:nth-child(1) {
   grid-template-rows:  minmax(min-content, 1fr) auto;
@@ -438,7 +439,7 @@ footer {
   box-sizing: border-box;
 }
 .ColonneFooter {
-  width: 40%;
+  width: 100%;
 }
 .Titrefooter {
   display: block;
@@ -465,6 +466,12 @@ footer {
   {
              width :auto ;
              padding: 0px;
+  }
+  div.RechercheHergement,div.filtres{
+    margin: 0 20px;
+  }
+  .infos{
+    margin: 10px 20px;
   }
   header  {
     display: flex;
@@ -520,17 +527,9 @@ div#logo {
 .titrefiltres{
   width: 100%
 }
-.IconeFiltre {
-    margin: 5px 5px 8px 0px    ;
-    }
 
 .filtres{
   align-items: flex-start;
-  margin: 20px;
-}
-p.infos
-{
-margin: 20px;
 }
 /************************************************************/
 /* Partie RECHERCHE  mettre la Loupe à la palce de Recherche*/
@@ -545,13 +544,8 @@ margin: 20px;
     .input_recherche {
         width: 100%
     }
-
-    .RechercheHergement {
-        margin: 20px;
-    }
     .Recherche {
         width: 100%;
-        margin: 20px    auto;
     }
 .TousHebergements {
   display: flex;
@@ -603,13 +597,12 @@ header ul li {
 }
   .Footer{
     flex-direction: column;
-    padding-left: 10px;
+    margin: 0 20px;
   }
   /**********************   ACTIVITE ***********/
   #Activity{
-    margin: 15px;
+    margin: 0 20px;
     width: auto;
-    height: 100%;
   } 
 .All_box
 {
@@ -646,7 +639,6 @@ header ul li {
   grid-column: 1;
 }
 }
-
 /***************                   Responsive pour Tablette        ***************/
 @media(min-width: 768px) and (max-width: 1388px)
 {
@@ -654,8 +646,37 @@ header ul li {
   {
     width :100% ;
   }
+  main{
+    margin: 0 20px;
+  }
+  header{
+    margin: 0 20px;
+  }
   #Hebergements, #pluspopulaires {
     background-color:white;
+  }
+  #Hebergements
+  {
+    padding: 0;
+  }
+  #pluspopulaires{
+    padding: 0px;}
+  .hebergementspop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: none;
+
+    height: 500px;
+  }
+  .hotelpop
+  {
+    display: flex;
+    margin: 0px 5px 20px 5px;
+    height: 145px;
+    width: 100%;
+    justify-content: space-between;
   }
 /*******************      DEBUT GESTION ACTIVITES    *******************/
 #Activity
@@ -673,4 +694,6 @@ header ul li {
   grid-gap: 20px;
   height: 400px;
 }
+.Footer
+{margin: 0 20px;}
 }
