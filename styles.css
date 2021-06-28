@@ -1,6 +1,6 @@
-/* Fichier CSS pour mon projet 2 création du site RESERVIA */
-/*#0065FC, et sa version plus claire #DEEBFF */
-/*Police Raleway pour site Reservia   */
+/*Fichier CSS pour mon projet 2 création du site RESERVIA*/
+/*#0065FC, et sa version plus claire #DEEBFF*/
+/*Police Raleway pour site Reservia*/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
@@ -229,7 +229,7 @@ a{
   width: 30%;
   background: white;
   border-radius: 20px;
-  border : 5px solid white;
+  border : 5px solid transparent;
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 5px 20px 5px;
@@ -306,7 +306,7 @@ a{
   width: 100%;
   background: white;
   border-radius: 20px;
-  border : 5px solid white;
+  border : 5px solid transparent;
   overflow: hidden;
   justify-content: space-around;
   box-sizing: border-box;
@@ -666,8 +666,6 @@ header ul li {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
-    flex-grow: none;
-
     height: 500px;
   }
   .hotelpop
